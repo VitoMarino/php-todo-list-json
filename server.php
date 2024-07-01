@@ -1,5 +1,5 @@
 <?php
-$toDoLists = [
+/*$toDoLists = [
     [
         "Impegno" => "Fare la spesa",
         "Orario" => "Ore 14:00"
@@ -35,6 +35,7 @@ $toDoLists = [
     ];
 
     echo(json_encode($toDoList));
+*/
 
 // Travesto questo array come un json.
 header("Content-type: application/json");
@@ -59,7 +60,7 @@ $jsonFilteredData = json_encode($data); // Dati filtrati in json
 file_put_contents("./db/listaFiltrata.json", $jsonFilteredData);
 
 // Codifico in json prima di restituirlo.
-echo $jsonFilteredData;
+echo file_get_contents("./db/listaFiltrata.json");
 
 
 ?>

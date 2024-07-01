@@ -20,10 +20,10 @@
             <section class="content">
                 <div class="container">
                     <div class="row">
-                        <div class="col-3" v-for="toDoLists in toDoList">
+                        <div class="col-3" v-for="item in liste">
                             <div class="card">
                                 <h2 class="card-title">
-                                    To Do List: {{toDoList.Impegno}}
+                                    To Do List: {{item.Impegno}}
                                 </h2>
                             </div>
                         </div>

@@ -1,10 +1,10 @@
-const { createApp } = Vue;
+const { createApp } = Vue
 
 createApp({
     data() {
         return {
             orario: " ",
-            toDoLists: [],
+            liste: [],
         }
     },
     methods: {
@@ -16,13 +16,10 @@ createApp({
             })
                 .then((response) => {
                     console.log(response);
-                    this.toDoLists = response.data;
+                    this.liste = response.data;
                 })
                 .catch(function (error) {
                     console.log(error);
-                })
-                .finally(function () {
-                    // always executed
                 });
         }
     },
