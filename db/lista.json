@@ -1,0 +1,18 @@
+[
+    {
+        "Impegno": "Riunione con il team",
+        "Orario": "10:00"
+    },
+    {
+        "Impegno": "Pranzo con il cliente",
+        "Orario": "12:30"
+    },
+    {
+        "Impegno": "Telefonata con il fornitore",
+        "Orario": "15:00"
+    },
+    {
+        "Impegno": "Review del progetto",
+        "Orario": "17:00"
+    }
+]
