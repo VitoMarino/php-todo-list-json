@@ -5,6 +5,7 @@ createApp({
         return {
             todoList: [],
             apiUrl: "./api/get_list.php",
+            newTaskName: "",
         }
     },
     methods: {
@@ -21,6 +22,15 @@ createApp({
                     
                 });
         },
+        addTask(taskToAdd){
+            newTodoObject = {
+                name: taskToAdd,
+                description: taskToAdd,
+                completed: false
+            };
+            this.todoList.push(newTodoObject);
+            this.newTaskName = "";
+        }
     },
     created(){
         this.getTodoList();
