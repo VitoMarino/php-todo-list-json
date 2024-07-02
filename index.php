@@ -10,7 +10,23 @@
 <body>
     <div id="app">
         <main>
-
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-6">
+                        <h1>
+                            Todo List JSON
+                        </h1>
+                        <section class="todoList">
+                        <ul class="list-group">
+                            <li class="list-group-item list-group-item-action" v-for="item in todoList">
+                                {{item.name}}
+                            </li> 
+                            <li class="list-group-item list-group-item-action disabled" aria-disabled="true">A disabled link item</li>
+                        </ul>
+                        </section>
+                    </div>
+                </div>
+            </div>
         </main>
     </div>
 
