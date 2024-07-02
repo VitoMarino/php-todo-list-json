@@ -16,7 +16,8 @@ if (
     $todoList[] = [
         'name' => $_GET["name"],
         'description' => $_GET["description"],
-        'completed' => $_GET["completed"],
+        // Converto con === true in un valore booleano
+        'completed' => $_GET["completed"] === true,
     ];
 
     // Mi salvo tutta la precedenrte condizione in una variabile
